@@ -1,0 +1,15 @@
+{
+  "name": "@monorepo/consultor",
+  "version": "0.0.0",
+  "dependencies": {
+    "@monorepo/axios-config": "*"
+  },
+  "devDependencies": {
+    "nuxt": "nuxt3@latest"
+  },
+  "scripts": {
+    "dev": "PORT=3000 nuxi dev",
+    "start": "node .output/server/index.mjs",
+    "test": "echo CONSULTOR - teste"
+  }
+}
