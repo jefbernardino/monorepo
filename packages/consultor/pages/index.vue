@@ -1,6 +1,7 @@
 <template>
   <div>
     <pre>PROJECT: CONSULTOR</pre>
+    <MonorepoButton text="Quem é esse pokemon?" />
     <h1 v-if="pokedexTotals > 0">A sua pokedex tem atualmente {{ pokedexTotals }} pokemons.</h1>
     <h3>Seu pokemon principal é: {{ choosedPokemon.name }}</h3>
     <h4>Lista dos 20 primeios de sua pokedex:</h4>
@@ -14,8 +15,13 @@
 
 <script>
 import axiosPublic from "@monorepo/axios-config";
+import MonorepoButton from "@monorepo/monorepo-button"
 
 export default {
+  name: 'InitialPage',
+  components: {
+    MonorepoButton
+  },
   data: () => ({
     choosedPokemon: {},
     pokedexTotals: 0,
