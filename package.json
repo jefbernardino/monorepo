@@ -10,7 +10,15 @@
     ]
   },
   "scripts": {
-    "consultor": "cd packages/consultor && nuxi dev",
-    "dev:consultor": "cd packages/consultor && nuxi dev"
+    "consultor": "cd packages/consultor && PORT=3000 nuxi dev",
+    "dev:consultor": "cd packages/consultor && PORT=3000 nuxi dev",
+    "produtor": "cd packages/produtor && PORT=3001 next dev",
+    "dev:produtor": "cd packages/produtor && PORT=3001 next dev"
+  },
+  "devDependencies": {
+    "eslint": "8.14.0"
+  },
+  "dependencies": {
+    "sass": "^1.51.0"
   }
 }

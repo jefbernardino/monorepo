@@ -8,6 +8,9 @@ Projeto usando como base o `yarn workspaces`
 ### Rodar projeto / package específica (alterável pelo `package.json`)
 Ex: `yarn dev:consultor / yarn consultor`
 
+### Instalação de pacotes globais para os packages:
+Ex: `yarn add sass -W`
+
 ### Instalação de pacotes específicos para os packages:
 Ex: `yarn workspace @monorepo/axios-config add axios`
 
