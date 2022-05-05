@@ -1,11 +1,16 @@
 {
   "name": "@monorepo/consultor",
   "version": "0.0.0",
+  "private": true,
   "dependencies": {
     "@monorepo/axios-config": "*"
   },
   "devDependencies": {
     "nuxt": "nuxt3@latest"
+  },
+  "engines" : {
+    "npm" : ">=8.6.0",
+    "node" : ">=17.8.0"
   },
   "scripts": {
     "dev": "nuxi dev",

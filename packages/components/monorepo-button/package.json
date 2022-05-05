@@ -1,5 +1,9 @@
 {
   "name": "@monorepo/monorepo-button",
   "version": "0.0.0",
-  "main": "index.js"
+  "main": "index.js",
+  "engines" : {
+    "npm" : ">=8.6.0",
+    "node" : ">=17.8.0"
+  }
 }
