@@ -3,6 +3,16 @@
   "version": "0.0.0",
   "private": true,
   "main": "index.js",
+  "devDependencies": {
+    "eslint": "8.14.0"
+  },
+  "dependencies": {
+    "sass": "^1.51.0"
+  },
+  "engines" : {
+    "npm" : ">=8.6.0",
+    "node" : ">=17.8.0"
+  },
   "workspaces": {
     "packages": [
       "packages/*",
@@ -14,11 +24,5 @@
     "dev:consultor": "cd packages/consultor && PORT=3000 nuxi dev",
     "produtor": "cd packages/produtor && PORT=3001 next dev",
     "dev:produtor": "cd packages/produtor && PORT=3001 next dev"
-  },
-  "devDependencies": {
-    "eslint": "8.14.0"
-  },
-  "dependencies": {
-    "sass": "^1.51.0"
   }
 }
